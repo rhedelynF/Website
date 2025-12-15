@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="animated">
+            <div class="navbar">
+                <div class="logo-container">
+                <a href="index.html">
+                   <p class="logo">Canon</p>
+                   <span class="logo-text">Delighting You Always</span>
+                </a> 
+                </div>     
+                <div class="nav-links">
+                   <ul>
+                        <li><a href="shop.html">SHOP</a></li>
+                        <li><a href="about.html">ABOUT US</a></li>
+                        <li><a href="contact.html">CONTACT US</a></li>
+                   </ul>
+                </div>
+                <div class="icons">
+                   <a href="#" id="cartIcon" class="fas fa-shopping-cart"></a>
+                </div>
+            </div>     
+        </header>
+        
+        <main class="shop-section">
+
+            <section class="products">
+                <h2>Shop Products</h2>
+            
+                <div class="product-list" id="productList">
+                </div>
+            </section>
+        
+            
+            <section class="cart hidden" id="cartSection">
+                <h2>Your Cart</h2>
+            
+                <div id="cartItems">
+                    <p>No items in cart</p>
+                </div>
+            
+                <h3 id="totalPrice">Total: ₱0</h3>
+                <button id="checkoutBtn">Checkout</button>
+            </section>
+
+        </main>
+    </div>
+    <script src="shop.js"></script>
+</body>
+</html>

@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poetsen+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #fff;
+}
+
+.container {
+    transform: translateY(30px);
+    opacity: 0;
+    animation: slide-in 1s ease forwards;
+    animation-delay: 1s;
+}
+
+@keyframes slide-in {
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.navbar{
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+.animated {
+    transform: translateY(30px);
+    opacity: 0;
+    animation: slide-in 1s ease forwards;
+    animation-delay: 1s;
+}
+
+@keyframes slide-in {
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.logo-container a{
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: rgb(188, 0, 36);
+  font-family: 'Cinzel', serif;
+  font-size: 1.5em;
+  font-weight: 700;
+  font-style: italic;
+  letter-spacing: -1px;
+}
+
+.logo {
+      font-family: 'IM Fell French Canon', serif;
+      font-size: 2.5em;
+      font-weight: 400;
+}
+
+.logo-text{
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.logo-container{
+    transition: transform 0.5s ease;
+}
+
+.logo-container:hover {
+  transform: scale(0.9);
+}
+
+/**/
+.nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 40px;
+}
+
+.nav-links ul{
+    list-style: none;
+    display: flex;
+    gap: 35px;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: rgb(188, 0, 36);
+    font-family: Concert one;
+    font-size: 20px;
+    font-weight: 500;
+    box-shadow: 0 0 0 0 transparent;
+    transition: box-shadow 0.3s ease-in-out;
+    text-shadow: 1px 1px 0px #000;
+    transition: .5s;
+}
+
+.nav-links a:hover{
+    box-shadow: 0 2px 0 0 #000;
+}
+
+.icons a {
+    font-size: 2.5rem;
+    color: #333;
+    text-decoration: none;
+    margin-left: 1.5rem;
+    transition: .5s;
+}
+
+.icons a:hover {
+    color: rgb(188, 0, 36);
+}
+
+section {
+    padding: 1.5rem 6%;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    min-height: 90vh;
+    padding-right: 5rem;
+}
+
+.home .content {
+    max-width: 50rem;
+}
+
+.home .content h3 {
+    font-size: 5rem;
+    color: #333;
+}
+
+.home .content span {
+    font-size: 3rem;
+    color:var(rgb(188, 0, 36));
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+
+.home .content p {
+    font-size: 1.5;
+    color: rgb(188, 0, 36);
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 5rem;
+    background: #333;
+    color: #fff;
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+    transition: .5s;
+}
+
+.btn:hover {
+    background: rgb(188, 0, 36);
+}
+
+.home-img {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    height: 100;
+    width: 100;
+} 
+
+.home-img img {
+    width: 700px;       
+    max-width: 100%;   
+    height: auto;
+
+} 
+
+.shop-section {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
+    padding: 40px;
+}
+
+.products, .cart {
+    background: #f5f5f5;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.product {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+}
+.product img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    background: #fff;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+.cart {
+    position: sticky;
+    top: 100px;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.qty-controls button {
+    padding: 3px 8px;
+    margin: 0 5px;
+}
+
+.heading {
+    text-align: center;
+    font-size: 3.2rem;
+    color: #333;
+    padding: .5rem;
+    margin: 1rem 0;
+    background: #fff;
+}
+
+.heading span {
+    color: rgb(188, 0, 36);
+}
+
+.about .row {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    padding-bottom: 1.5rem;
+}
+
+.about .row .container {
+    flex: 1;
+    position: relative;
+}
+
+.about .row .container img {
+    width: 100%;
+    height: auto;
+    border: .8rem solid #fff;
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+
+.about .row .container h3 {
+    position: absolute;
+    top: 50%; transform: translateY(-50%);
+    font-size: 3rem;
+    background: #fff;
+    width: 100%;
+    padding: 1rem 2rem;
+    text-align: center;
+    mix-blend-mode: screen;
+}
+
+.about .row .content {
+    flex: 1;
+}
+
+.about .row .content h3 {
+    font-size: 3rem;
+    color: #333;
+}
+
+.about .row .content p {
+    font-size: 1.5rem;
+    color: #999;
+    padding-top: 1rem;
+    line-height: 1.5;
+}
+
+.contact {
+    padding: 3rem 6%;
+    background: #fff;
+}
+
+.contact-title {
+    text-align: center;
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+.contact-title span {
+    color: rgb(188, 0, 36);
+}
+
+.contact-box {
+    max-width: 700px;
+    margin: auto;
+    background: #f9f9f9;
+    padding: 2.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.contact-box .input-box {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.contact-box input,
+.contact-box textarea {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.6rem;
+    color: #333;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: .5rem;
+    margin-top: 1rem;
+}
+
+.contact-box .btn {
+    margin-top: 2rem;
+    width: 100%;
+    text-align: center;
+}
